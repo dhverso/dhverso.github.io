@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DHverso — Traduções PT-BR de jogos</title>
+<meta name="description" content="Traduções de jogos para o português do Brasil, feitas por fãs: Dragon Quest, Star Ocean, Xenosaga, Final Fantasy, Sword Art Online, Lost Odyssey. Gratuitas e sem fins lucrativos.">
+<meta property="og:title" content="DHverso — Traduções PT-BR de jogos">
+<meta property="og:description" content="Traduções de jogos para o português do Brasil, feitas por fãs. Gratuitas e sem fins lucrativos.">
+<meta property="og:image" content="https://dhverso.com.br/imagens/xs3.jpg">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%2312162b'/><text x='32' y='43' font-size='30' font-family='Arial' font-weight='700' fill='%2376ece2' text-anchor='middle'>DH</text></svg>">
+<style>
+:root{--bg:#0d1020;--card:#161a30;--card2:#1d2240;--txt:#e8ebf5;--sub:#a3a9c2;--acc:#76ece2;--acc2:#8c5aff;--borda:#2a3058}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--txt);font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.5}
+a{color:var(--acc)}
+header{padding:56px 16px 32px;text-align:center;background:radial-gradient(ellipse at top,#232a5a 0%,var(--bg) 70%)}
+.logo{font-size:clamp(40px,8vw,72px);font-weight:800;letter-spacing:1px;margin:0;
+  background:linear-gradient(180deg,#e6fbff 0%,var(--acc) 45%,#2e7f9a 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.logo span{color:var(--txt);-webkit-text-fill-color:var(--txt)}
+.lema{margin:8px auto 0;max-width:640px;color:var(--sub);font-size:18px}
+.faixa{height:3px;max-width:520px;margin:22px auto 0;background:linear-gradient(90deg,transparent,var(--acc2),var(--acc),transparent);border-radius:3px}
+main{max-width:1180px;margin:0 auto;padding:8px 16px 48px}
+.filtros{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:8px 0 28px}
+.filtros button{background:var(--card);color:var(--txt);border:1px solid var(--borda);border-radius:999px;padding:7px 16px;font-size:15px;cursor:pointer}
+.filtros button.ativo,.filtros button:hover{border-color:var(--acc);color:var(--acc)}
+.grade{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:22px;align-items:stretch}
+.card{background:var(--card);border:1px solid var(--borda);border-radius:14px;overflow:hidden;display:flex;flex-direction:column;transition:transform .15s,border-color .15s}
+.card:hover{transform:translateY(-3px);border-color:var(--acc)}
+.capa{position:relative;display:block;aspect-ratio:1400/396;overflow:hidden;background:#000}
+.capa::before{content:'';position:absolute;inset:-20px;background:var(--bg) center/cover;filter:blur(14px) brightness(.55)}
+.capa img{position:relative;width:100%;height:100%;display:block;object-fit:contain}
+.info{padding:14px 16px 16px;display:flex;flex-direction:column;gap:8px;flex:1}
+.info h2{font-size:18px;margin:0;line-height:1.3;min-height:2.6em}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tag{font-size:12.5px;padding:2px 9px;border-radius:999px;background:var(--card2);color:var(--sub);border:1px solid var(--borda)}
+.tag.versao{color:var(--acc);border-color:#2f6b6a}
+.botoes{display:flex;gap:8px;margin-top:auto;padding-top:4px}
+.botoes a{flex:1;text-align:center;text-decoration:none;padding:9px 10px;border-radius:9px;font-weight:600;font-size:15px}
+.baixar{background:linear-gradient(180deg,#3a7ff0,#2a5fc4);color:#fff}
+.projeto{background:var(--card2);color:var(--txt);border:1px solid var(--borda)}
+.sobre{max-width:820px;margin:48px auto 0;background:var(--card);border:1px solid var(--borda);border-radius:14px;padding:22px 24px;color:var(--sub)}
+.sobre h3{color:var(--txt);margin:0 0 8px}
+footer{text-align:center;color:var(--sub);font-size:13.5px;padding:24px 16px 40px;max-width:820px;margin:0 auto}
+@media (max-width:420px){.grade{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header>
+  <h1 class="logo">DH<span>verso</span></h1>
+  <p class="lema">Traduções de jogos para o português do Brasil, feitas por fãs.</p>
+  <div class="faixa"></div>
+</header>
+<main>
+  <div class="filtros" id="filtros"></div>
+  <div class="grade" id="grade"></div>
+
+  <section class="sobre">
+    <h3>Sobre</h3>
+    <p>Cada tradução é feita com o contexto da história, o jeito de falar de cada personagem e o texto original ao lado
+    para conferir sentido, gênero e tratamento. Textos medidos para caber na tela, acentos desenhados na fonte do jogo e
+    testes no emulador ou no PC antes de cada versão. As traduções usaram ferramentas de IA, sempre com revisão.</p>
+    <p>Achou um erro? Abra uma <em>issue</em> na página do projeto. Toda correção ajuda.</p>
+  </section>
+</main>
+<footer>
+  Traduções feitas por fãs, para fãs, <strong>gratuitas</strong> e <strong>sem fins lucrativos</strong>, sem ligação com as
+  empresas donas dos jogos. Os patches não contêm os jogos: você precisa da sua cópia original. Não podem ser vendidos.
+  Todos os nomes e marcas pertencem aos seus donos. Apoie as franquias comprando os jogos oficiais.
+  <br><br><a href="https://github.com/dhverso">github.com/dhverso</a>
+</footer>
+<script>
+const J = [
+  {r:'xenosaga-3-ps2-ptbr', img:'xs3', t:'Xenosaga Episode III: Also sprach Zarathustra', p:'PlayStation 2', v:'v1.0'},
+  {r:'star-ocean-3-ps2-ptbr', img:'so3', t:'Star Ocean: Till the End of Time', p:'PlayStation 2', v:'v1.6'},
+  {r:'star-ocean-5-ps4-ptbr', img:'so5', t:'Star Ocean: Integrity and Faithlessness', p:'PlayStation 4', v:'v1.8'},
+  {r:'dragon-quest-11-s-ptbr', img:'dq11-s', t:'Dragon Quest XI S: Echoes of an Elusive Age', p:'PC', v:'v1.2'},
+  {r:'dragon-quest-1-2-hd2d-ptbr', img:'dq12-hd2d', t:'Dragon Quest I & II HD-2D Remake', p:'PC', v:'v1.2'},
+  {r:'dragon-quest-8-3ds-ptbr', img:'dq8-3ds', t:'Dragon Quest VIII: Journey of the Cursed King', p:'Nintendo 3DS', v:'v1.7'},
+  {r:'dragon-quest-9-ds-ptbr', img:'dq9-ds', t:'Dragon Quest IX: Sentinels of the Starry Skies', p:'Nintendo DS', v:'v1.4'},
+  {r:'final-fantasy-resonance-ptbr', img:'ffrs', t:'Final Fantasy Resonance', p:'PC', v:'v1.1'},
+  {r:'lost-odyssey-ptbr', img:'lost-odyssey', t:'Lost Odyssey', p:'Xbox 360', v:'v1.3', extra:'PC (Recomp)'},
+  {r:'sword-art-online-re-hollow-fragment-ptbr', img:'sao-hf', t:'Sword Art Online Re: Hollow Fragment', p:'PC', v:'v1.0'},
+  {r:'sword-art-online-lost-song-ptbr', img:'sao-ls', t:'Sword Art Online: Lost Song', p:'PC', v:'v1.2'},
+  {r:'accel-world-vs-sword-art-online-ptbr', img:'aw-sao', t:'Accel World VS. Sword Art Online', p:'PC', v:'v1.0'},
+];
+const G = 'https://github.com/dhverso/';
+const grade = document.getElementById('grade'), filtros = document.getElementById('filtros');
+const plats = ['Todos', ...new Set(J.map(j => j.p))];
+let atual = 'Todos';
+function desenha(){
+  grade.innerHTML = '';
+  J.filter(j => atual === 'Todos' || j.p === atual).forEach(j => {
+    const c = document.createElement('article'); c.className = 'card';
+    c.innerHTML = `<a class="capa" href="${G}${j.r}" style="--bg:url(imagens/${j.img}.jpg)"><img src="imagens/${j.img}.jpg" alt="${j.t}" loading="lazy"></a>
+      <div class="info"><h2>${j.t}</h2>
+      <div class="tags"><span class="tag">${j.p}</span>${j.extra ? `<span class="tag">${j.extra}</span>` : ''}<span class="tag versao" id="v-${j.r}">${j.v}</span></div>
+      <div class="botoes"><a class="baixar" href="${G}${j.r}/releases/latest">Baixar</a><a class="projeto" href="${G}${j.r}">Página do projeto</a></div></div>`;
+    grade.appendChild(c);
+  });
+}
+plats.forEach(p => {
+  const b = document.createElement('button'); b.textContent = p; if (p === atual) b.className = 'ativo';
+  b.onclick = () => { atual = p; [...filtros.children].forEach(x => x.className = x === b ? 'ativo' : ''); desenha(); };
+  filtros.appendChild(b);
+});
+desenha();
+// versão mais recente direto do GitHub (se a API responder; senão fica a versão escrita acima)
+J.forEach(j => fetch(`https://api.github.com/repos/dhverso/${j.r}/releases/latest`).then(r => r.ok ? r.json() : null)
+  .then(d => { const e = document.getElementById('v-' + j.r); if (d && d.tag_name && e) { j.v = d.tag_name; e.textContent = d.tag_name; } }).catch(() => {}));
+</script>
+</body>
+</html>
