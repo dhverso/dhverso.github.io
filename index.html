@@ -73,7 +73,7 @@ footer{text-align:center;color:var(--sub);font-size:13.5px;padding:24px 16px 40p
 const J = [
   {r:'xenosaga-3-ps2-ptbr', img:'xs3', t:'Xenosaga Episode III: Also sprach Zarathustra', p:'PlayStation 2', v:'v1.0'},
   {r:'star-ocean-3-ps2-ptbr', img:'so3', t:'Star Ocean: Till the End of Time', p:'PlayStation 2', v:'v1.6'},
-  {r:'star-ocean-5-ps4-ptbr', img:'so5', t:'Star Ocean: Integrity and Faithlessness', p:'PlayStation 4', v:'v1.8'},
+  {r:'star-ocean-5-ps4-ptbr', img:'so5', t:'Star Ocean: Integrity and Faithlessness', p:'PlayStation 4', v:'v1.8', extra:'PC (Recomp)'},
   {r:'dragon-quest-11-s-ptbr', img:'dq11-s', t:'Dragon Quest XI S: Echoes of an Elusive Age', p:'PC', v:'v1.2'},
   {r:'dragon-quest-1-2-hd2d-ptbr', img:'dq12-hd2d', t:'Dragon Quest I & II HD-2D Remake', p:'PC', v:'v1.2'},
   {r:'dragon-quest-8-3ds-ptbr', img:'dq8-3ds', t:'Dragon Quest VIII: Journey of the Cursed King', p:'Nintendo 3DS', v:'v1.7'},
@@ -90,7 +90,7 @@ const plats = ['Todos', ...new Set(J.map(j => j.p))];
 let atual = 'Todos';
 function desenha(){
   grade.innerHTML = '';
-  J.filter(j => atual === 'Todos' || j.p === atual).forEach(j => {
+  J.filter(j => atual === 'Todos' || j.p === atual || (j.extra || '').split(' ')[0] === atual).forEach(j => {
     const c = document.createElement('article'); c.className = 'card';
     c.innerHTML = `<a class="capa" href="${G}${j.r}" style="--bg:url(imagens/${j.img}.jpg)"><img src="imagens/${j.img}.jpg" alt="${j.t}" loading="lazy"></a>
       <div class="info"><h2>${j.t}</h2>
